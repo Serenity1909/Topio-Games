@@ -1,0 +1,341 @@
+/* contenu header */
+header.index {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(../img/background_site.jpg);
+  background-position-x: -60px;
+}
+
+.titre_box {
+  margin: -15px;
+  text-decoration: underline;
+}
+
+nav.menu_header {
+  display: flex;
+  height: 40px;
+  font-family: "Kenia", cursive;
+  border: 1px solid black;
+}
+
+nav.menu_header ul {
+  background-color: #333333;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  list-style-type: none;
+}
+
+nav.menu_header li {
+  display: inline-block;
+  width: 100px;
+  border-right: 1px solid #cccccc;
+  text-align: center;
+  height: 40px;
+}
+
+nav.menu_header li:hover {
+  background-color: #000000;
+  transition: 0.3s;
+}
+
+nav.menu_header li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+nav.article li a {
+  margin-top: 8px;
+}
+
+body {
+  background-image: url(../img/fond\ site.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: black;
+  margin-top: -35px;
+  overflow-y: scroll;
+}
+
+.titre_box {
+  background-color: white;
+  position: absolute;
+  z-index: 999;
+  top: 50px;
+  box-shadow: -8px 8px 2px 1px rgba(245, 124, 11, 0.3);
+}
+
+/* ------ */
+/* slider */
+/* ------ */
+
+.slider {
+  overflow: hidden;
+  margin: 5px;
+}
+
+div.slides {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: calc(300px * 4);
+  height: 300px;
+  animation: glisse 15s infinite ease;
+  position: relative;
+}
+
+@keyframes glisse {
+  0% {
+    transform: translateX(0);
+  }
+
+  10% {
+    transform: translateX(-200);
+  }
+
+  33% {
+    transform: translateX(-1500px);
+  }
+
+  66% {
+    transform: translateX(-600px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* --------------- */
+/* navigation menu */
+/* --------------- */
+
+nav.menu ul {
+  overflow: hidden;
+  display: flex;
+  margin: auto;
+  margin-left: -40px;
+  margin-top: 50px;
+}
+
+nav.menu ul li {
+  border-radius: 15px;
+  margin: 5px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s all;
+  font-family: "Kenia", cursive;
+}
+
+nav.menu ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s all;
+}
+
+nav.menu ul li a {
+  display: block;
+  padding: 5px;
+  background-color: #3333339d;
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+  width: 90%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.nav-item {
+  width: 100%;
+  height: 200px;
+}
+
+.pokemon {
+  background: url(../img/photo_head3.jpg) 50%;
+  background-size: cover;
+}
+
+.funko {
+  background: url(../img/funko3.jpg) 50%;
+  background-size: cover;
+}
+
+.encas {
+  background: url(../img/nourriture5.jpg) 50%;
+  background-size: cover;
+}
+
+.figurine {
+  background: url(../img/figurine3.jpg) 50%;
+  background-size: cover;
+}
+
+.jeux {
+  background: url(../img/societe6.jpg) 50%;
+  background-size: cover;
+}
+
+.video {
+  background: url(../img/jeu3.jpg) 50%;
+  background-size: cover;
+}
+
+/* ----------- */
+/* menu scroll */
+/* ----------- */
+
+.sticky {
+  visibility: visible;
+  position: fixed;
+  width: 12%;
+  top: 1;
+  margin-top: 5px;
+  transition: 0.5s;
+  transform: translateY(-50px);
+}
+
+.sticky nav.menu ul {
+  flex-direction: column;
+  height: 84vh;
+}
+
+.sticky nav.menu ul li a {
+  margin-right: 5px;
+}
+
+/* ---------- */
+/* index.html */
+/* ---------- */
+
+.indexFondSite {
+  margin: auto;
+  line-height: 40px;
+  margin-top: -35px;
+}
+
+.indexI {
+  padding-top: 100px;
+  padding-bottom: 20px;
+  margin: auto;
+  font-size: 3em;
+  color: white;
+}
+
+/* ------------ */
+/* contact.html */
+/* ------------ */
+
+.heure {
+  margin: auto;
+  margin-left: 570px;
+  margin-bottom: 20px;
+}
+th {
+  border: 1px solid white;
+  color: white;
+  width: 200px;
+  font-size: 1.5em;
+}
+
+form {
+  margin-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 150px;
+  margin-left: 150px;
+  min-width: 650px;
+  flex-direction: column;
+  width: 80%;
+  color: white;
+}
+
+.choix {
+  margin-left: 20px;
+  display: inline-block;
+  font-size: 120%;
+  width: 200px;
+  padding-right: 5%;
+}
+
+.elem {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  width: 400px;
+  background-color: rgb(255, 255, 255, 0.5);
+  border-radius: 5px;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.75);
+}
+
+.btn {
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100px;
+  font-size: 100%;
+  background: linear-gradient(
+    rgba(17, 11, 11, 0.1) 40%,
+    rgba(155, 143, 143, 0.5)
+  );
+  background-color: rgb(33, 39, 43);
+}
+
+/* ------------ */
+/* pied de page */
+/* ------------ */
+
+.indexff {
+  position: fixed;
+  bottom: 0;
+}
+footer {
+  display: flex;
+  width: 100%;
+  margin-left: 0;
+  font-size: 18px;
+  color: white;
+  background-color: #181818b9;
+  padding-top: 10px;
+  line-height: 15px;
+}
+
+.footerline {
+  display: flex;
+}
+
+.footerlineitem {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  margin: 5px;
+}
+
+.C {
+  margin-left: 420px;
+}
+footer ul li {
+  list-style-type: none;
+}
+
+footer ul li a {
+  font-size: 20px;
+  color: white;
+  line-height: 30px;
+}
+
+footer address,
+p {
+  text-align: center;
+}
+
+.copyright {
+  text-align: right;
+}
